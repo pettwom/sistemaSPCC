@@ -1,0 +1,37 @@
+Pagina\SpccBundle\Entity\TypeGallery:
+    type: entity
+    table: type_gallery
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        type:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        status:
+            type: boolean
+            nullable: true
+            options:
+                default: true
+        registerDate:
+            type: date
+            nullable: true
+            options:
+                default: now()
+            column: register_date
+        userId:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: user_id
+    lifecycleCallbacks: {  }

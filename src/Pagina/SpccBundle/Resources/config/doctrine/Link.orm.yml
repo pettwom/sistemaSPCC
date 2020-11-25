@@ -1,0 +1,51 @@
+Pagina\SpccBundle\Entity\Link:
+    type: entity
+    table: link
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        linkTitle:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: link_title
+        descriptionLink:
+            type: text
+            nullable: true
+            length: null
+            options:
+                fixed: false
+            column: description_link
+        link:
+            type: string
+            nullable: true
+            length: null
+            options:
+                fixed: false
+        userId:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: user_id
+        state:
+            type: boolean
+            nullable: true
+            options:
+                default: true
+        registerDate:
+            type: date
+            nullable: true
+            options:
+                default: now()
+            column: register_date
+    lifecycleCallbacks: {  }

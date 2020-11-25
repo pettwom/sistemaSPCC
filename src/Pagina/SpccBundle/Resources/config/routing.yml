@@ -1,0 +1,7 @@
+pagina_spcc_homepage:
+    path:     /
+    defaults: { _controller: PaginaSpccBundle:Default:index }
+
+spcc_backend:
+    resource: "@PaginaSpccBundle/Resources/config/Backend/backend.yml"
+    prefix:   /backend

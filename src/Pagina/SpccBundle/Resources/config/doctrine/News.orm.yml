@@ -1,0 +1,68 @@
+Pagina\SpccBundle\Entity\News:
+    type: entity
+    table: news
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        titleNews:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: title_news
+        dateNews:
+            type: date
+            nullable: true
+            column: date_news
+        shortNews:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: short_news
+        longNews:
+            type: text
+            nullable: true
+            length: null
+            options:
+                fixed: false
+            column: long_news
+        authorNews:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: author_news
+        registerDate:
+            type: date
+            nullable: true
+            column: register_date
+        userId:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: user_id
+        state:
+            type: boolean
+            nullable: true
+            options:
+                default: true
+        pathImage:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: path_image
+    lifecycleCallbacks: {  }

@@ -1,0 +1,167 @@
+# **********************
+# SLIDER
+# **********************
+pagina_spcc_listSlider:
+  path: /listSlider
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listSlider }
+  methods: [GET]
+pagina_spcc_addSlider:
+  path: /addSlider
+  defaults: { _controller: PaginaSpccBundle:BackEnd:addSlider }
+  methods: [POST]
+pagina_spcc_updateSlider:
+  path: /delSlider
+  defaults: { _controller: PaginaSpccBundle:BackEnd:deleteSlider }
+  methods: [DELETE]
+  # **********************
+  # NEWS
+  # **********************
+pagina_spcc_listNews:
+  path: /ListNews
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listNews }
+  methods: [GET]
+pagina_spcc_createNews:
+  path: /CreateNews
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createNews }
+  methods: [POST]
+pagina_spcc_updateNews:
+  path: /UpdateNews
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateNews }
+  methods: [POST]
+pagina_spcc_delNews:
+  path: /DelNews
+  defaults: { _controller: PaginaSpccBundle:BackEnd:delNews }
+  methods: [POST]
+  # **********************
+  # COMMENTS
+  # **********************
+pagina_spcc_listComments:
+  path: /Comments
+  defaults: { _controller: PaginaSpccBundle:BackEnd:comments }
+  methods: [GET]
+pagina_spcc_comment:
+  path: /Comment
+  defaults: { _controller: PaginaSpccBundle:BackEnd:comment }
+  methods: [GET]
+pagina_spcc_toPostComments:
+  path: /toPost
+  defaults: { _controller: PaginaSpccBundle:BackEnd:toPost }
+  methods: [POST]
+  # **********************
+  # COMMENTS
+  # **********************
+pagina_spcc_listSpcc:
+  path: /list
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listSpcc }
+  methods: [GET]
+pagina_spcc_oneSpcc:
+  path: /listOne
+  defaults: { _controller: PaginaSpccBundle:BackEnd:oneSpcc }
+  methods: [GET]
+pagina_spcc_createSpcc:
+  path: /createSpcc
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createSpcc }
+  methods: [POST]
+pagina_spcc_updateSpcc:
+  path: /updateSpcc
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateSpcc }
+  methods: [POST]
+pagina_spcc_delSpcc:
+  path: /delSpcc
+  defaults: { _controller: PaginaSpccBundle:BackEnd:delSpcc }
+  methods: [POST]
+  # **********************
+  # CONFIGURATION
+  # **********************
+pagina_spcc_ListConfig:
+  path: /ListConfig
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listConfig }
+  methods: [GET]
+pagina_spcc_updateConfig:
+  path: /updateConfig
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateConfig }
+  methods: [POST]
+pagina_spcc_createConfig:
+  path: /createConfig
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createConfig }
+  methods: [POST]
+
+  # **********************
+  # RELEASE
+  # **********************
+pagina_spcc_createRelease:
+  path: /createRelease
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createRelease }
+  methods: [POST]
+pagina_spcc_listRelease:
+  path: /listRelease
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listRelease }
+  methods: [GET]
+pagina_spcc_updateRelease:
+  path: /updateRelease
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateRelease }
+  methods: [POST]
+pagina_spcc_delRelease:
+  path: /delRelease
+  defaults: { _controller: PaginaSpccBundle:BackEnd:delRelease }
+  methods: [POST]
+
+  # **********************
+  # TYPE
+  # **********************
+pagina_spcc_createType:
+  path: /createType
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createType }
+  methods: [POST]
+pagina_spcc_listType:
+  path: /listType
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listType }
+  methods: [GET]
+pagina_spcc_updateType:
+  path: /updateType
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateType }
+  methods: [POST]
+pagina_spcc_delType:
+  path: /delType
+  defaults: { _controller: PaginaSpccBundle:BackEnd:delType }
+  methods: [POST]
+
+  # **********************
+  # GALLERY
+  # **********************
+pagina_spcc_createGallery:
+  path: /createGallery
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createGallery }
+  methods: [POST]
+pagina_spcc_lsitGallery:
+  path: /listGallery
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listGallery }
+  methods: [GET]
+pagina_spcc_updateGallery:
+  path: /updateGallery
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateGallery }
+  methods: [POST]
+pagina_spcc_delGallery:
+  path: /delGallery
+  defaults: { _controller: PaginaSpccBundle:BackEnd:delGallery }
+  methods: [POST]
+
+  # **********************
+  # LINK
+  # **********************
+pagina_spcc_createLink:
+  path: /createLink
+  defaults: { _controller: PaginaSpccBundle:BackEnd:createLink }
+  methods: [POST]
+pagina_spcc_listLink:
+  path: /listLink
+  defaults: { _controller: PaginaSpccBundle:BackEnd:listLink }
+  methods: [GET]
+pagina_spcc_updateLink:
+  path: /updateLink
+  defaults: { _controller: PaginaSpccBundle:BackEnd:updateLink }
+  methods: [POST]
+pagina_spcc_delLink:
+  path: /delLink
+  defaults: { _controller: PaginaSpccBundle:BackEnd:delLink }
+  methods: [POST]

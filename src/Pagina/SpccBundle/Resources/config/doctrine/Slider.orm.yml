@@ -1,0 +1,36 @@
+Pagina\SpccBundle\Entity\Slider:
+    type: entity
+    table: slider
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        imageSlider:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: image_slider
+        registerDate:
+            type: date
+            nullable: true
+            column: register_date
+        userId:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: user_id
+        state:
+            type: boolean
+            nullable: true
+            options:
+                default: true
+    lifecycleCallbacks: {  }

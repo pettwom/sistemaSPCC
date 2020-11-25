@@ -1,0 +1,54 @@
+Pagina\SpccBundle\Entity\Spcc:
+    type: entity
+    table: spcc
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        mission:
+            type: text
+            nullable: true
+            length: null
+            options:
+                fixed: false
+        view:
+            type: text
+            nullable: true
+            length: null
+            options:
+                fixed: false
+        objetive:
+            type: text
+            nullable: true
+            length: null
+            options:
+                fixed: false
+        legalFramework:
+            type: text
+            nullable: true
+            length: null
+            options:
+                fixed: false
+            column: legal_framework
+        registerDate:
+            type: date
+            nullable: true
+            column: register_date
+        userId:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: user_id
+        state:
+            type: boolean
+            nullable: true
+            options:
+                default: true
+    lifecycleCallbacks: {  }
